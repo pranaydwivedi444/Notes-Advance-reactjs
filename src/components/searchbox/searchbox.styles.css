@@ -1,0 +1,23 @@
+.searchbox-container {
+  background-color: aliceblue;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchbox {
+  width: 40%;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  outline: none;
+
+  border: none;
+}
+
+#searchbox:focus {
+  outline: none;
+  border: none;
+}
