@@ -2,9 +2,10 @@ import React, { useContext } from "react";
 import { NotesContext } from "../../Contexts/Notes.context";
 import "./Note.styles.css";
 export default function Note({ text, date, id }) {
-  const { noteState, setNoteState } = useContext(NotesContext);
+  const { noteState, setNoteState, setInitialNotes } = useContext(NotesContext);
   function deleteNote(e) {
     const newNotesList = noteState.filter((note) => note.id != id);
+    setInitialNotes(newNotesList);
 
     setNoteState(newNotesList);
   }

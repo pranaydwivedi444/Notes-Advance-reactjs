@@ -4,7 +4,7 @@ import React, { useContext, useState } from "react";
 import { NotesContext } from "../../Contexts/Notes.context";
 const charcterLimit = 200;
 function NewNote() {
-  const { setNoteState } = useContext(NotesContext);
+  const { setNoteState, setInitialNotes } = useContext(NotesContext);
   const [noteText, setNoteText] = useState("");
   function newNote(e) {
     // console.log(e.target.value);
@@ -17,6 +17,7 @@ function NewNote() {
       text: noteText,
       date: new Date().toDateString(),
     };
+    setInitialNotes((prev) => [newNote, ...prev]);
     setNoteState((prev) => [newNote, ...prev]);
     setNoteText("");
   }

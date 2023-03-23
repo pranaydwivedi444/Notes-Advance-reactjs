@@ -1,0 +1,11 @@
+.title-box {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.title-box h1 {
+  color: rgb(255, 255, 0);
+  size: 3rem;
+  text-shadow: 2px 2px #000000;
+}

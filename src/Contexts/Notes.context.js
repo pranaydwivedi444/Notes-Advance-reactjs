@@ -34,9 +34,13 @@ export const NotesStateProvider = (props) => {
       date: new Date(2021, 5, 12).toDateString(),
     },
   ];
-  const [noteState, setNoteState] = useState(notes);
 
-  const value = { noteState, setNoteState, initialNotes: notes };
+  let savedNotes = JSON.parse(localStorage.getItem("notes-app-data"));
+  if (!savedNotes) savedNotes = [];
+  const [initialNotes, setInitialNotes] = useState(savedNotes);
+  const [noteState, setNoteState] = useState(initialNotes);
+
+  const value = { noteState, setNoteState, initialNotes, setInitialNotes };
   return (
     <NotesContext.Provider value={value}>
       {props.children}
