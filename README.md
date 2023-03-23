@@ -1,5 +1,8 @@
 ## Note-Taking App
 This is a simple web-based note-taking application built with ReactJS. It allows users to add, delete, and search notes within a certain character limit. The app also saves notes even after reloads, using local storage.
+Live Link - https://pranaydwivedi444.github.io/Notes-Advance-reactjs
+![image](https://user-images.githubusercontent.com/48515987/227156990-5e3e2288-344b-4cfe-9a96-53eeb77466de.png)
+
 
 ## Features
 Add new notes within a character limit of 200 characters.
