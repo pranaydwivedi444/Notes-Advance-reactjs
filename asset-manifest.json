@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Notes-Advance-reactjs/static/css/main.200cbaff.css",
+    "main.js": "/Notes-Advance-reactjs/static/js/main.44b7973e.js",
+    "static/js/787.b68a1870.chunk.js": "/Notes-Advance-reactjs/static/js/787.b68a1870.chunk.js",
+    "index.html": "/Notes-Advance-reactjs/index.html",
+    "main.200cbaff.css.map": "/Notes-Advance-reactjs/static/css/main.200cbaff.css.map",
+    "main.44b7973e.js.map": "/Notes-Advance-reactjs/static/js/main.44b7973e.js.map",
+    "787.b68a1870.chunk.js.map": "/Notes-Advance-reactjs/static/js/787.b68a1870.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.200cbaff.css",
+    "static/js/main.44b7973e.js"
+  ]
+}
